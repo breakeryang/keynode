@@ -36,11 +36,40 @@ title  需求
     - 设计约束
     - 质量属性Qos
 
+|===
+|Header 1 |Header 2 |Header 3
+
+|Column 1, row 1
+|Column 2, row 1
+|Column 3, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|Column 3, row 2
+
+|Column 1, row 3
+|Column 2, row 3
+|Column 3, row 3
+|===
+
+
+include::structured_approach.adoc[]
 
 #### 需求发现
 
 
 ### 结构化方法， 自顶向下的分析
+
+
+. 改进软件结构
+. 规模适中
+    .. 深度
+    .. 宽度
+    .. 扇入 -
+    .. 扇出 - 直接控制下级模块数
+. 作用域与控制域
+. 接口复杂度
+
 
 
 

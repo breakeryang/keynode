@@ -1,0 +1,49 @@
+
+
+
+[plantuml]
+....
+@startuml
+
+package CS {
+    CS <--> (CS-MQ)
+    (CS-MQ) --|> (CS-NET)
+}
+
+package NAS {
+    package MQ {
+        (CS-NET) .. (NAS-NET-10)
+        (NAS-NET-127)
+        (NAS-NET-192)
+    }
+
+    (NAS-BIZ) ..|> (NAS-NET-127)
+}
+
+package VM {
+
+
+
+}
+
+
+@enduml
+....
+
+
+.可能情况
+|===
+|节点 |Header 2 |Header 3
+
+|Column 1, row 1
+|Column 2, row 1
+|Column 3, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|Column 3, row 2
+
+|Column 1, row 3
+|Column 2, row 3
+|Column 3, row 3
+|===
