@@ -1,0 +1,29 @@
+
+==== 整形
+
+==== 浮点型 
+
+==== 字符型 
+
+. char  8bits
+. 字符常量 
+
+. `Wchar_ 宽字符文字`
+
+
+
+=== 运算符， 依赖具体实现
+
+    8 / -5 = -1 ?
+    8 / -5 = -2 ? 
+
+    if (x = 0)
+        // not exec 
+
+
+---
+
+关于外循环, labeled continue / break ,  c++ 不支持
+
+
+latexmath:[$C = \alpha + \beta  Y^{\gamma} + \epsilon$]
