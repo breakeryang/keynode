@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rabbit/project/keynode/c/main.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+sys/time.h
+-
+xcb/xcb.h
+-
+X11/Xlib.h
+-
+

@@ -1,2 +1,133 @@
 
-. [ ] *制品*这个词有点怪
+. [ ] `制品` 这个词有点怪
+
+
+---
+
+
+
+. 协作
+.. 交互双方
+.. 交互方式
+.. 交互内容
+
+
+---
+
+. 关联 Association
+
+[plantuml]
+....
+
+    class String {
+        {field}
+            ~c:Char
+        {method} #getChars()
+
+        {static} +create()
+
+        {static} +createFrom(o:String)
+
+    }
+
+    class Char
+
+    String *- Char : have >
+
+....
+
+[graphviz]
+....
+digraph G {
+    fontsize = 8
+
+    node [
+        shape = "record"
+    ]
+
+    edge [
+
+    ]
+
+    Animal [
+        label = "{ Animal |+ name: String }"
+    ]
+
+    Animal -> b [dir=both, color="red:blue"]
+
+    a -> b [dir = none, label = "说明"]
+
+
+    subgraph R {
+        c -> d [dir=none]
+    };
+
+    R -> b
+
+    A -> { B , C }
+}
+
+
+
+....
+
+latexmath:[ a \ne 0 ]
+
+> 关联可见性
+
+> vk
+
+. 泛化 generalization
+. 细化/实现 realization
+. 依赖 dependency
+
+
+relations
+
+visibility
+
+
+---
+
+
+. 组合与聚合的区别
+.. 一般组合关系的类， 生命周期相同或者有明确的关联, 即可以描述为整体不存在的话， 个体也不般不会存存
+.. 信息封装性上， 组合也相对聚合稍有不同， 使用者不般不关系·被组合元素， 但关注聚合中的元素
+
+
+[graphviz]
+....
+digraph T {
+
+    node [shape = "record" ]
+
+    a[label="类间关系"]
+
+    a -> 继承
+
+    a -> 实现
+
+    a -> 依赖
+
+    a -> 关联
+
+    a -> 聚合
+
+    a -> 组合
+
+
+
+}
+....
+
+
+=== 类的继承结构
+
+类的继承结构表现在UML中为， 泛化(generalize) 与 实现 (realize)
+也有称继承(extents) 与实现(realize)
+
+
+
+
+
+

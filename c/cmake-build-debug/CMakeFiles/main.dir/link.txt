@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/main.dir/start_cv.cpp.o  -o main -lopencv_core -lopencv_highgui 

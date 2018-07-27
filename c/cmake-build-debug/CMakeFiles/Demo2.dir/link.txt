@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Demo2.dir/start_cv.cpp.o  -o Demo2 

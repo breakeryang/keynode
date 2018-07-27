@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rabbit/project/keynode/c/WinUtils.cpp
+WinUtils.h
+/home/rabbit/project/keynode/c/WinUtils.h
+
+/home/rabbit/project/keynode/c/WinUtils.h
+cstdint
+-
+
+/home/rabbit/project/keynode/c/main.cpp
+string
+-
+iostream
+-
+WinUtils.h
+/home/rabbit/project/keynode/c/WinUtils.h
+

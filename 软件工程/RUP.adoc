@@ -1,2 +1,22 @@
 
 
+
+[graphviz]
+....
+digraph  G {
+
+    rankdir = "TR"
+
+    if1[label = "条件1" , shape=diamond]
+    if2[label = "条件2" ]
+
+    node [
+        shape = "record"
+    ]
+
+    {shape=diamond; if1, if2 }
+
+    A -> B
+}
+
+....
